@@ -32,16 +32,13 @@ public class Main {
             System.out.println(year + " год не является високосным");
         }
 
-        int days;
+        int days = 1;
         int deliveryDistance = 95;
-        if (deliveryDistance <= 20) {
-            days = 1;
-        }
         if (deliveryDistance > 20 && deliveryDistance <= 60) {
             days = days + 1;
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            days = days + 1;
-            System.out.println("Потребуется дней " + days)
+            days = days ++;
+            System.out.println("Потребуется дней " + days);
         }
 
         int monthNumber = 12;
